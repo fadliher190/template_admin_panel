@@ -1,0 +1,40 @@
+@import url('./fonts/product_font.css');
+@import url('./color.css');
+*{
+    font-family: 'Product Sans Regular', sans-serif;
+    color: var(--default-color);
+}
+
+.sidebar .sidebar-body{
+    overflow-y: scroll;
+}
+
+.sidebar .sidebar-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar .sidebar-body::-webkit-scrollbar-track {
+    background-color: #f1f1f100;
+}
+
+.sidebar .sidebar-body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.sidebar .sidebar-body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+.sidebar-nav-header{
+    color: var(--primary-color);
+}
+.sidebar-nav-item.active *{
+    color: var(--primary-color);
+}
+
+
+.sidebar-nav-subitem{
+    display: none;
+}
