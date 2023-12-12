@@ -1,7 +1,7 @@
 @import url('./fonts/product_font.css');
 @import url('./color.css');
 *{
-    font-family: 'Product Sans Regular', sans-serif;
+    font-family: 'Product Sans', sans-serif;
     color: var(--default-color);
 }
 
@@ -34,7 +34,11 @@
     color: var(--primary-color);
 }
 
-
 .sidebar-nav-subitem{
     display: none;
+}
+
+.sidebar-nav-subitem-link{
+    font-size: 10pt;
+    font-weight: 300;
 }
