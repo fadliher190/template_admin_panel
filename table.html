@@ -1,0 +1,251 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Sample Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body class="font-sans bg-gray-100 flex flex-row">
+  <!-- Main Content -->
+  <div class="sidebar h-screen fixed top-0 left-0 bottom-0 flex w-80 flex-col bg-white shadow-lg">
+    <div class="sidebar-header h-20 flex items-center justify-center">
+      Admin Dashboard
+    </div>
+    <div class="sidebar-body flex-1 w-100">
+        <ul class="sidebar-nav">
+          <li class="sidebar-nav-header font-bold px-3 py-1">Menu</li>
+          <li class="sidebar-nav-item active"> 
+            <a href="#" class="flex items-center px-3 py-1"> <iconify-icon icon="ic:round-dashboard" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Dashboard</span></a>
+          </li>
+          <li class="sidebar-nav-item"> 
+            <a href="#" class="nav-subitem-link flex items-center px-3 py-1"> <iconify-icon icon="icon-park-solid:web-page" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Pages</span></a>
+            <ul class="sidebar-nav-subitem ml-10">
+              <li class="sidebar-nav-subitem-link">
+                <a href="" class="">Login Page</a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="" class="">Register Page</a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-nav-header font-bold px-3 py-1">UI Components</li>
+          <li class="sidebar-nav-item">
+            <!-- <a href="#" class="nav-link flex items-center px-3 py-1"> <iconify-icon  icon="fa6-solid:shapes" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Elements</span></a> -->
+            
+            <a href="#" class="nav-subitem-link flex items-center px-3 py-1"> <iconify-icon icon="fa6-solid:shapes" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Elements</span></a>
+            <ul class="sidebar-nav-subitem ml-10">
+              <!-- <li class="sidebar-nav-subitem-link">
+                <a href="" class="">Input</a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="" class="">Button</a>
+              </li> -->
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Standard Buttons
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Pills Buttons
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Square Buttons
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Shadow Buttons
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Icons Buttons
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Dropdowns
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Icons
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Badges
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Cards
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Loading Indicators
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  List Groups
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Navigation Menus
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Timeline
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Utilities
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-nav-item">
+            <!-- <a href="#" class="nav-link flex items-center px-3 py-1"> <iconify-icon  icon="fe:car" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Components</span></a> -->
+            <a href="#" class="nav-subitem-link flex items-center px-3 py-1"> <iconify-icon icon="fe:car" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Components</span></a>
+            <ul class="sidebar-nav-subitem ml-10">
+              <!-- <li class="sidebar-nav-subitem-link">
+                <a href="" class="">Card</a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="" class="">Modal</a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="" class="">Alert</a>
+              </li> -->
+              
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Tabs
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Accordions
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Notifications
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Modals
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Progress Bar
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Tooltips & Popovers
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Carousel
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Calendar
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Pagination
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Count Up
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Scrollable
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Maps
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Ratings
+                </a>
+              </li>
+              <li class="sidebar-nav-subitem-link">
+                <a href="">
+                  Image Crop
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#" class="nav-link flex items-center px-3 py-1"> <iconify-icon  icon="ri:table-fill" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Tables</span></a>
+          </li>
+          <li class="sidebar-nav-header font-bold px-3 py-1">Chart</li>
+          <!-- <li class="sidebar-nav-item">
+            <a href="#" class="nav-link flex items-center px-3 py-1"> <iconify-icon  icon="ant-design:setting-filled" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Dashboard</span></a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#" class="nav-link flex items-center px-3 py-1"> <iconify-icon  icon="ant-design:setting-filled" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Dashboard</span></a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#" class="nav-link flex items-center px-3 py-1"> <iconify-icon  icon="ant-design:setting-filled" class="w-5 mr-2" width="20px"></iconify-icon> <span class="flex-auto">Dashboard</span></a>
+          </li>
+        </ul> -->
+      </div>
+    <!-- <div class="sidebar-body bg-blue-50 py-2">
+      <center>
+        <small>Version 1.0</small>
+      </center>
+    </div> -->
+  </div>
+  <div class="flex-1 flex flex-col ml-80">
+    <nav class="h-20 bg-white flex flex-row items-center justify-center p-10">
+      <div class="flex-auto">
+        <div class="w-2/6 ">
+          <div class="flex h-10">
+            <!-- <input type="text" class="p-2 px-4 py-1 flex-1 rounded-xl border-2 " placeholder="Cari Data"> -->
+          </div>
+        </div>
+      </div>
+      <!-- <div class="ml-2"><iconify-icon icon="ant-design:setting-filled" width="26px"></iconify-icon></div> -->
+        <div class="ml-2"><iconify-icon icon="mingcute:notification-fill" width="26px"></iconify-icon></div>
+      </nav>
+      <div class="main-content flex-1 p-5 flex-col">
+        <div class="flex-1">
+          <div class=" grid grid-rows-3 grid-cols-2 gap-2">
+            <div class="row-span-3 col-span-1 bg-black h-32"></div>
+            <div class="row-span-3 col-span-1 bg-black h-32"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="./src/js/sidebar.js"></script>
+</body>
+</html>
